@@ -32,13 +32,16 @@ submitButton.addEventListener("click", function(e) {
     e.preventDefault();
     const email = loginForm.email.value;
     const password = loginForm.password.value;
-
-    if (email == "user" && password == "web_dev") {
-        alert("You have successfully logged in.");
-        window.location.href = "/chat.html";
-    } else {
-        alert("Incorrect credentials");
-    }
+    fetch("/profiles?email=" + email + "&password=" + password)
+        .then(response => response.json())
+        .then(data => {
+            if (data) {
+                alert("You have successfully logged in.");
+                window.location.href = "/chat.html";
+            } else {
+                alert("Incorrect credentials");
+            }
+        });
 });
 
 //fun register() {

@@ -1,6 +1,5 @@
 package com.ruhacks.ceto.model;
 
-import com.fasterxml.jackson.annotation.JsonInclude;
 import lombok.Getter;
 
 import javax.persistence.Column;
@@ -16,7 +15,7 @@ public class Profile {
     private String email;
     @Column(name = "password")
     private String password;
-    @Column(name = "displayName")
+    @Column(name = "display_name")
     private String displayName;
 
     public Profile() { }
