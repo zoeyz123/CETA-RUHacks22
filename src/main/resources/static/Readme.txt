@@ -1,6 +1,3 @@
-Thanks for downloading this template!
+Introducing Ceta - Meta with a C! 
 
-Template Name: Rapid
-Template URL: https://bootstrapmade.com/rapid-multipurpose-bootstrap-business-template/
-Author: BootstrapMade.com
-License: https://bootstrapmade.com/license/
+Ceta serves as a communication platform where students can connect with others taking the same classes as them.
