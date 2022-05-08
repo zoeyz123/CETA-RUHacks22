@@ -35,7 +35,7 @@ submitButton.addEventListener("click", function(e) {
 
     if (email == "user" && password == "web_dev") {
         alert("You have successfully logged in.");
-        window.location.href = "/inner-page.html";
+        window.location.href = "/chat.html";
     } else {
         alert("Incorrect credentials");
     }
